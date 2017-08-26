@@ -14,6 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/nichomon/html5-color-game.git"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "start": "nodemon --ignore node_modules server.js"
+  },
+  "devDependencies": {
+    "backbone": "~1.0.0",
+    "underscore": "~1.5.2",
+    "jquery": "~2.0.3",
+    "express": "^4.13.4",
+    "sqlite3": "~3.1.1"
   }
 }
