@@ -1,4 +1,6 @@
 var AppView = Backbone.View.extend({
+
+
   initialize: function() {
     this.colorGridView = new colorGridView({collection: this.model.get('colorsCollection')});
     // this.colorView = new colorView({model: this.model.get('colorModel')});
