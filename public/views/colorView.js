@@ -1,14 +1,16 @@
 var colorView = Backbone.View.extend({
-  initialize: function() {
-    this.render();
-  },
 
-  el: '.color-grid',
 
-  template: _.template('<span><div style="background-color: blanchedalmond;width: 100px;height: 100px"></div></span>'),
+
+  template: _.template('<span style="width: 100px;height: 100px">something</span>'),
 
   render: function() {
-    this.$el.html(this.template(this.model.attributes));
-    return this;
+    console.log(this.model.attributes)
+    var element = this.$el.html(this.template())
+    $(element).css('background-color', this.model.attributes.backgroundColor)
+    return element;
   }
 });
+
+
+/* <span><div style="background-color: blanchedalmond;width: 100px;height: 100px">something</div></span> */

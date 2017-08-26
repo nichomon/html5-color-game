@@ -17,12 +17,14 @@
       <div class="color-entry">
         <p>this is the color entry</p>
       </div>
-      <div class="color-grid"></div>
+      <div class="color-grid">
+        <p>this is the color-grid</p>
+      </div>
       <script>
 
         var appModel = new AppModel();
         var appView = new AppView({model: appModel});
-        $('body').append(appView.render());
+        $('.color-grid').append(appView.render())
       </script>
   </body>
 </html>

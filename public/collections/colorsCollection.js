@@ -1,6 +1,7 @@
 var ColorsCollection = Backbone.Collection.extend({
 
   model: ColorModel,
+
   initialize: function() {
     this.genColorModels();
   },
@@ -16,14 +17,12 @@ var ColorsCollection = Backbone.Collection.extend({
       success: function (data) {
         that.add(data);
         that.trigger('dataLoad');
-        console.log(data)
+        // console.log(data)
       },
       error: function (data) {
-        // See: https://developer.mozilla.org/en-US/docs/Web/API/console.error
         console.error('Failed to send message', data);
       }
     });
   }
-  // url: 'http://parse.sfm8.hackreactor.com/mytunes/classes/songs'
 
 });
