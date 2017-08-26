@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Color Game</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="models/appModel.js"></script>
+    <script src="views/appView.js"></script>
+  </head>
+  <body>
+      <div class="color-entry">
+        <p>this is the color entry</p>
+      </div>
+      <div class="color-grid"></div>
+      <script>
+
+        var appModel = new appModel();
+        var appView = new appView({model: appModel});
+        // $('body').append(appView.render());
+      </script>
+  </body>
+</html>
