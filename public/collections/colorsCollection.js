@@ -1,6 +1,6 @@
-var Songs = Backbone.Collection.extend({
+var ColorsCollection = Backbone.Collection.extend({
 
-  model: colorModel,
+  model: ColorModel,
   initialize: function() {
     this.genColorModels();
   },
