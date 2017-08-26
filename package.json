@@ -1,0 +1,19 @@
+{
+  "name": "HTML5 Color Quiz",
+  "version": "0.0.1",
+  "description": "Master your knowledge of HTML5 colors or else you're garbage",
+  "keywords": [
+    "backbone",
+    "HTML5",
+    "colors",
+    "backbonejs"
+  ],
+  "author": {
+    "name": "Nick Freeman",
+    "url": "https://www.nickfreemandesign.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
