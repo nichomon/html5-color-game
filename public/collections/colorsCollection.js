@@ -14,8 +14,8 @@ var ColorsCollection = Backbone.Collection.extend({
       data: '',
       contentType: 'application/json',
       success: function (data) {
-        // that.add(data.results);
-        // that.trigger('dataLoad');
+        that.add(data);
+        that.trigger('dataLoad');
         console.log(data)
       },
       error: function (data) {
