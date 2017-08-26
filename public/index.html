@@ -9,15 +9,19 @@
     <script src="models/appModel.js"></script>
     <script src="models/colorModel.js"></script>
     <script src="collections/colorsCollection.js"></script>
+    <script src="collections/randomColorsCollection.js"></script>
+    <script src="collections/colorQueueCollection.js"></script>
     <script src="views/appView.js"></script>
     <script src="views/colorGridView.js"></script>
     <script src="views/colorView.js"></script>
+    <script src="utils/frontEndUtils.js"></script>
+
     <link rel="stylesheet" href="styles.css">
 
   </head>
   <body>
       <div class="color-entry">
-        <span>type a color in!      </span><input type="text">
+        <span>type a color in!      </span><input id="input-box" type="text">
       </div>
       <div class="color-grid">
         <p>colors to choose from</p>
