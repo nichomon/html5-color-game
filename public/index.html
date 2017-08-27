@@ -13,6 +13,7 @@
     <script src="collections/colorQueueCollection.js"></script>
     <script src="views/appView.js"></script>
     <script src="views/colorGridView.js"></script>
+    <script src="views/colorEntryView.js"></script>
     <script src="views/colorView.js"></script>
     <script src="utils/frontEndUtils.js"></script>
 
@@ -20,17 +21,11 @@
 
   </head>
   <body>
-      <div class="color-entry">
-        <span>type a color in!      </span><input id="input-box" type="text">
-      </div>
-      <div class="color-grid">
-        <p>colors to choose from</p>
-      </div>
       <script>
 
         var appModel = new AppModel();
         var appView = new AppView({model: appModel});
-        $('.color-grid').append(appView.render())
+
       </script>
   </body>
 </html>

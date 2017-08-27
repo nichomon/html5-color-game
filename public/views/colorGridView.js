@@ -1,4 +1,4 @@
-var colorGridView = Backbone.View.extend({
+var ColorGridView = Backbone.View.extend({
 
   className: 'colorGridView',
 

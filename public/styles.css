@@ -5,3 +5,11 @@
   font-family: monospace;
   margin: 0 3px 0 3px;
 }
+
+input {
+  margin-bottom: 20px;
+}
+
+h5 {
+  display: inline-block;
+}
