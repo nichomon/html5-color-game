@@ -3,6 +3,7 @@ var RandomColorsCollection = Backbone.Collection.extend({
 
   initialize: function() {
     this.genRandomColorModels();
+    this.on('removeColor', this.removeColor, this);
   },
 
   genRandomColorModels: function() {
@@ -21,6 +22,10 @@ var RandomColorsCollection = Backbone.Collection.extend({
         console.error('Failed to send message', data);
       }
     });
+  },
+
+  removeColor: function(color) {
+    this.remove(color);
   }
 
 });

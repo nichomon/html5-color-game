@@ -3,9 +3,17 @@ var AppView = Backbone.View.extend({
   el: 'body',
 
   initialize: function() {
-    this.colorGridView = new ColorGridView({collection: this.model.get('randomColorsCollection')});
-    this.colorEntryView = new ColorEntryView({collection: this.model.get('randomColorsCollection')});
+    var coll = {collection: this.model.get('randomColorsCollection')}
+
+    this.colorGridView = new ColorGridView(coll);
+    this.colorEntryView = new ColorEntryView(coll);
+
     this.render();
+
+    this.model.get('randomColorsCollection').on('removeColor', function(thing) {
+      this.colorGridView.render()
+    }, this);
+
   },
 
 

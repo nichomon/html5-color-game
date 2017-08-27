@@ -8,10 +8,11 @@ var ColorGridView = Backbone.View.extend({
     this.collection.on('dataLoad', function() {
       this.render();
     }, this);
+
   },
 
   render: function() {
-
+    this.$el.children().detach();
     this.$el.append(
       this.collection.map(function(color) {
         return new colorView({model: color}).render();
