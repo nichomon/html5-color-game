@@ -1,0 +1,446 @@
+[
+  {
+    "backgroundColor": "aliceblue"
+  },
+  {
+    "backgroundColor": "antiquewhite"
+  },
+  {
+    "backgroundColor": "aqua"
+  },
+  {
+    "backgroundColor": "aquamarine"
+  },
+  {
+    "backgroundColor": "azure"
+  },
+  {
+    "backgroundColor": "beige"
+  },
+  {
+    "backgroundColor": "bisque"
+  },
+  {
+    "backgroundColor": "black"
+  },
+  {
+    "backgroundColor": "blanchedalmond"
+  },
+  {
+    "backgroundColor": "blue"
+  },
+  {
+    "backgroundColor": "blueviolet"
+  },
+  {
+    "backgroundColor": "brown"
+  },
+  {
+    "backgroundColor": "burlywood"
+  },
+  {
+    "backgroundColor": "cadetblue"
+  },
+  {
+    "backgroundColor": "chartreuse"
+  },
+  {
+    "backgroundColor": "chocolate"
+  },
+  {
+    "backgroundColor": "coral"
+  },
+  {
+    "backgroundColor": "cornflowerblue"
+  },
+  {
+    "backgroundColor": "cornsilk"
+  },
+  {
+    "backgroundColor": "crimson"
+  },
+  {
+    "backgroundColor": "cyan"
+  },
+  {
+    "backgroundColor": "darkblue"
+  },
+  {
+    "backgroundColor": "darkcyan"
+  },
+  {
+    "backgroundColor": "darkgoldenrod"
+  },
+  {
+    "backgroundColor": "darkgray"
+  },
+  {
+    "backgroundColor": "darkgreen"
+  },
+  {
+    "backgroundColor": "darkgrey"
+  },
+  {
+    "backgroundColor": "darkkhaki"
+  },
+  {
+    "backgroundColor": "darkmagenta"
+  },
+  {
+    "backgroundColor": "darkolivegreen"
+  },
+  {
+    "backgroundColor": "darkorange"
+  },
+  {
+    "backgroundColor": "darkorchid"
+  },
+  {
+    "backgroundColor": "darkred"
+  },
+  {
+    "backgroundColor": "darksalmon"
+  },
+  {
+    "backgroundColor": "darkseagreen"
+  },
+  {
+    "backgroundColor": "darkslateblue"
+  },
+  {
+    "backgroundColor": "darkslategray"
+  },
+  {
+    "backgroundColor": "darkslategrey"
+  },
+  {
+    "backgroundColor": "darkturquoise"
+  },
+  {
+    "backgroundColor": "darkviolet"
+  },
+  {
+    "backgroundColor": "deeppink"
+  },
+  {
+    "backgroundColor": "deepskyblue"
+  },
+  {
+    "backgroundColor": "dimgray"
+  },
+  {
+    "backgroundColor": "dimgrey"
+  },
+  {
+    "backgroundColor": "dodgerblue"
+  },
+  {
+    "backgroundColor": "firebrick"
+  },
+  {
+    "backgroundColor": "floralwhite"
+  },
+  {
+    "backgroundColor": "forestgreen"
+  },
+  {
+    "backgroundColor": "fuchsia"
+  },
+  {
+    "backgroundColor": "gainsboro"
+  },
+  {
+    "backgroundColor": "ghostwhite"
+  },
+  {
+    "backgroundColor": "gold"
+  },
+  {
+    "backgroundColor": "goldenrod"
+  },
+  {
+    "backgroundColor": "gray"
+  },
+  {
+    "backgroundColor": "green"
+  },
+  {
+    "backgroundColor": "greenyellow"
+  },
+  {
+    "backgroundColor": "grey"
+  },
+  {
+    "backgroundColor": "honeydew"
+  },
+  {
+    "backgroundColor": "hotpink"
+  },
+  {
+    "backgroundColor": "indianred"
+  },
+  {
+    "backgroundColor": "indigo"
+  },
+  {
+    "backgroundColor": "ivory"
+  },
+  {
+    "backgroundColor": "khaki"
+  },
+  {
+    "backgroundColor": "lavender"
+  },
+  {
+    "backgroundColor": "lavenderblush"
+  },
+  {
+    "backgroundColor": "lawngreen"
+  },
+  {
+    "backgroundColor": "lemonchiffon"
+  },
+  {
+    "backgroundColor": "lightblue"
+  },
+  {
+    "backgroundColor": "lightcoral"
+  },
+  {
+    "backgroundColor": "lightcyan"
+  },
+  {
+    "backgroundColor": "lightgoldenrodyellow"
+  },
+  {
+    "backgroundColor": "lightgray"
+  },
+  {
+    "backgroundColor": "lightgreen"
+  },
+  {
+    "backgroundColor": "lightgrey"
+  },
+  {
+    "backgroundColor": "lightpink"
+  },
+  {
+    "backgroundColor": "lightsalmon"
+  },
+  {
+    "backgroundColor": "lightseagreen"
+  },
+  {
+    "backgroundColor": "lightskyblue"
+  },
+  {
+    "backgroundColor": "lightslategray"
+  },
+  {
+    "backgroundColor": "lightslategrey"
+  },
+  {
+    "backgroundColor": "lightsteelblue"
+  },
+  {
+    "backgroundColor": "lightyellow"
+  },
+  {
+    "backgroundColor": "lime"
+  },
+  {
+    "backgroundColor": "limegreen"
+  },
+  {
+    "backgroundColor": "linen"
+  },
+  {
+    "backgroundColor": "magenta"
+  },
+  {
+    "backgroundColor": "maroon"
+  },
+  {
+    "backgroundColor": "mediumaquamarine"
+  },
+  {
+    "backgroundColor": "mediumblue"
+  },
+  {
+    "backgroundColor": "mediumorchid"
+  },
+  {
+    "backgroundColor": "mediumpurple"
+  },
+  {
+    "backgroundColor": "mediumseagreen"
+  },
+  {
+    "backgroundColor": "mediumslateblue"
+  },
+  {
+    "backgroundColor": "mediumspringgreen"
+  },
+  {
+    "backgroundColor": "mediumturquoise"
+  },
+  {
+    "backgroundColor": "mediumvioletred"
+  },
+  {
+    "backgroundColor": "midnightblue"
+  },
+  {
+    "backgroundColor": "mintcream"
+  },
+  {
+    "backgroundColor": "mistyrose"
+  },
+  {
+    "backgroundColor": "moccasin"
+  },
+  {
+    "backgroundColor": "navajowhite"
+  },
+  {
+    "backgroundColor": "navy"
+  },
+  {
+    "backgroundColor": "oldlace"
+  },
+  {
+    "backgroundColor": "olive"
+  },
+  {
+    "backgroundColor": "olivedrab"
+  },
+  {
+    "backgroundColor": "orange"
+  },
+  {
+    "backgroundColor": "orangered"
+  },
+  {
+    "backgroundColor": "orchid"
+  },
+  {
+    "backgroundColor": "palegoldenrod"
+  },
+  {
+    "backgroundColor": "palegreen"
+  },
+  {
+    "backgroundColor": "paleturquoise"
+  },
+  {
+    "backgroundColor": "palevioletred"
+  },
+  {
+    "backgroundColor": "papayawhip"
+  },
+  {
+    "backgroundColor": "peachpuff"
+  },
+  {
+    "backgroundColor": "peru"
+  },
+  {
+    "backgroundColor": "pink"
+  },
+  {
+    "backgroundColor": "plum"
+  },
+  {
+    "backgroundColor": "powderblue"
+  },
+  {
+    "backgroundColor": "purple"
+  },
+  {
+    "backgroundColor": "rebeccapurple"
+  },
+  {
+    "backgroundColor": "red"
+  },
+  {
+    "backgroundColor": "rosybrown"
+  },
+  {
+    "backgroundColor": "royalblue"
+  },
+  {
+    "backgroundColor": "saddlebrown"
+  },
+  {
+    "backgroundColor": "salmon"
+  },
+  {
+    "backgroundColor": "sandybrown"
+  },
+  {
+    "backgroundColor": "seagreen"
+  },
+  {
+    "backgroundColor": "seashell"
+  },
+  {
+    "backgroundColor": "sienna"
+  },
+  {
+    "backgroundColor": "silver"
+  },
+  {
+    "backgroundColor": "skyblue"
+  },
+  {
+    "backgroundColor": "slateblue"
+  },
+  {
+    "backgroundColor": "slategray"
+  },
+  {
+    "backgroundColor": "slategrey"
+  },
+  {
+    "backgroundColor": "snow"
+  },
+  {
+    "backgroundColor": "springgreen"
+  },
+  {
+    "backgroundColor": "steelblue"
+  },
+  {
+    "backgroundColor": "tan"
+  },
+  {
+    "backgroundColor": "teal"
+  },
+  {
+    "backgroundColor": "thistle"
+  },
+  {
+    "backgroundColor": "tomato"
+  },
+  {
+    "backgroundColor": "turquoise"
+  },
+  {
+    "backgroundColor": "violet"
+  },
+  {
+    "backgroundColor": "wheat"
+  },
+  {
+    "backgroundColor": "white"
+  },
+  {
+    "backgroundColor": "whitesmoke"
+  },
+  {
+    "backgroundColor": "yellow"
+  },
+  {
+    "backgroundColor": "yellowgreen"
+  }
+]

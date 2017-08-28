@@ -3,10 +3,11 @@ var AppView = Backbone.View.extend({
   el: 'body',
 
   initialize: function() {
-    var coll = {collection: this.model.get('randomColorsCollection')}
+    var randomColorsCollection = {collection: this.model.get('randomColorsCollection')}
 
-    this.colorGridView = new ColorGridView(coll);
-    this.colorEntryView = new ColorEntryView(coll);
+    this.timerView = new TimerView({collection: this.model.get('colorQueueCollection')});
+    this.colorGridView = new ColorGridView(randomColorsCollection);
+    this.colorEntryView = new ColorEntryView(randomColorsCollection);
 
     this.render();
 
@@ -18,7 +19,7 @@ var AppView = Backbone.View.extend({
 
 
   render: function() {
-    return this.$el.html([this.colorEntryView.$el, this.colorGridView.$el]);
+    return this.$el.html([this.colorEntryView.$el, this.timerView.$el, this.colorGridView.$el]);
   }
 
 });

@@ -1,6 +1,6 @@
 var ColorEntryView = Backbone.View.extend({
 
-  className: '.color-entry',
+  className: 'top-row color-entry',
 
   initialize: function() {
     this.render();
@@ -9,11 +9,10 @@ var ColorEntryView = Backbone.View.extend({
   template: _.template('<h5>type a color in:  </h5><input id="input-box" type="text">'),
 
   events: {
-    'change input#input-box': 'checkValue'
+    'change input#input-box': 'checkValueSubmitted'
   },
 
-  checkValue: function () {
-
+  checkValueSubmitted: function() {
     var input = document.getElementById('input-box').value;
     this.collection.findWhere({backgroundColor: input}).removeColor();
     $('#input-box').val('');
