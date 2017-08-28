@@ -6,7 +6,7 @@ var ColorEntryView = Backbone.View.extend({
     this.render();
   },
 
-  template: _.template('<h5>type a color in:  </h5><input id="input-box" type="text">'),
+  template: _.template('<h5>Type a color in:  </h5><input id="input-box" type="text">'),
 
   events: {
     'change input#input-box': 'checkValueSubmitted'

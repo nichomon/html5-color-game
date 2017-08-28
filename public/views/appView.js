@@ -5,7 +5,7 @@ var AppView = Backbone.View.extend({
   initialize: function() {
     var randomColorsCollection = {collection: this.model.get('randomColorsCollection')}
 
-    this.timerView = new TimerView({collection: this.model.get('colorQueueCollection')});
+    this.timerView = new TimerView({model: this.model.get('timerModel')});
     this.colorGridView = new ColorGridView(randomColorsCollection);
     this.colorEntryView = new ColorEntryView(randomColorsCollection);
 
@@ -13,6 +13,10 @@ var AppView = Backbone.View.extend({
 
     this.model.get('randomColorsCollection').on('removeColor', function(thing) {
       this.colorGridView.render()
+    }, this);
+
+    this.model.get('timerModel').on('counterChange', function(thing) {
+      this.timerView.render()
     }, this);
 
   },
