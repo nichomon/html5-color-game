@@ -3,7 +3,7 @@ var AppModel = Backbone.Model.extend({
     this.set('gameStartModel', new GameStartModel({gameStarted: false}));
     this.set('randomColorsCollection', new RandomColorsCollection());
     this.set('colorQueueCollection', new ColorQueueCollection());
-    this.set('timerModel', new TimerModel({counter: 60}));
+    this.set('timerModel', new TimerModel({counter: 30}));
 
 
     this.get('gameStartModel').on('gameStart', function(gameStartModel) {

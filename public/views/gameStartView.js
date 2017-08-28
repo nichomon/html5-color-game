@@ -5,7 +5,18 @@ var GameStartView = Backbone.View.extend({
     this.render();
   },
 
-  template: _.template('<h5>Enter your name:  </h5><input id="name-input-box" type="text" autofocus="autofocus"> <button type:"button">START</button>'),
+  template: _.template(
+                        ['<h1 id="awesome-title">',
+                        'How many ridiculous html5 colornames can you enter in 30 seconds???',
+                        '</h1>',
+                        '<h5>',
+                          'Enter your name:  ',
+                        '</h5>',
+                        '<input id="name-input-box" type="text" autofocus="autofocus"> ',
+                        '<button type:"button">',
+                          'START',
+                        '</button>'].join(' ')
+                      ),
 
     events: {
       'change input#name-input-box': 'submitNameAndStartGame'

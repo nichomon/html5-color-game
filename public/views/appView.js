@@ -20,9 +20,12 @@ var AppView = Backbone.View.extend({
       }
     })
 
-    this.model.get('randomColorsCollection').on('removeColor', function(thing) {
-      this.render(renderView[7]);
-      this.colorGridView.render();
+    this.model.get('randomColorsCollection').on('removeColor', function(color) {
+      if (that.model.get('randomColorsCollection').length === 0) {
+        that.render(renderView[9])
+      } else {
+        this.colorGridView.render();
+      }
     }, this);
 
     this.model.get('timerModel').on('counterChange', function(thing) {
