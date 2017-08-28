@@ -6,7 +6,7 @@ var TimerView = Backbone.View.extend({
     this.render();
   },
 
-  template: _.template('<h5>Time remaining: <%= counter %></h5>'),
+  template: _.template('<h5>Time remaining: <%= counter %> s</h5>'),
 
   render: function() {
     return this.$el.html(this.template(this.model.attributes));
