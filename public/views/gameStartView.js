@@ -13,7 +13,7 @@ var GameStartView = Backbone.View.extend({
                           'Enter your name:  ',
                         '</h5>',
                         '<input id="name-input-box" type="text" autofocus="autofocus"> ',
-                        '<button type:"button">',
+                        '<button type="button">',
                           'START',
                         '</button>'].join(' ')
                       ),

@@ -4,7 +4,8 @@ var AppModel = Backbone.Model.extend({
     this.set('gameEndModel', new GameEndModel());
     this.set('randomColorsCollection', new RandomColorsCollection());
     this.set('colorQueueCollection', new ColorQueueCollection());
-    this.set('timerModel', new TimerModel({counter: 30}));
+    this.set('timerModel', new TimerModel({counter: 2}));
+    this.set('highScoresCollection', new HighScoresCollection());
 
 
     this.get('gameStartModel').on('gameStart', function(gameStartModel) {
@@ -22,29 +23,18 @@ var AppModel = Backbone.Model.extend({
       timer.set({counter: counter})
     }, this);
 
+
+//when timer ends
     this.get('timerModel').on('endTimer', function(timer) {
+      //gather score
       window.sessionDetails.score = this.get('colorQueueCollection').length;
-      this.sendScore(window.sessionDetails);
-      this.get('gameEndModel').gameEnd();
-      this.get('timerModel').set({counter: 30});
+      //invoke send score
+      this.get('highScoresCollection').sendScore(window.sessionDetails);
+      //reset counter
+      this.get('timerModel').set({counter: 2});
     }, this);
-  },
 
-  sendScore: function(sessionDetails) {
-    var that = this;
-    $.ajax({
-      url: 'http://localhost:1337/sendStats',
-      type: 'POST',
-      crossDomain: true,
-      data: JSON.stringify([sessionDetails]),
-      success: function (data) {
-
-        that.trigger('dataLoad');
-        // console.log(data)
-      },
-      error: function (data) {
-        console.error('Failed to send message', data);
-      }
-    });
   }
+
+
 });

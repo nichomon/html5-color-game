@@ -21,3 +21,12 @@ input {
 h5 {
   display: inline-block;
 }
+
+h1 {
+  text-align: center;
+}
+
+td {
+  padding: 5px 20px 5px 20px;
+  width: 50%;
+}
