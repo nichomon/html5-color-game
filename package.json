@@ -27,9 +27,12 @@
   "homepage": "https://github.com/nichomon/html5-color-game#readme",
   "dependencies": {
     "backbone": "~1.0.0",
-    "underscore": "~1.5.2",
-    "jquery": "^3.0.0",
+    "bookshelf": "^0.9.1",
     "express": "^4.13.4",
-    "sqlite3": "~3.1.1"
+    "jquery": "^3.0.0",
+    "knex": "^0.10.0",
+    "sqlite": "^2.8.0",
+    "sqlite3": "~3.1.1",
+    "underscore": "~1.5.2"
   }
 }

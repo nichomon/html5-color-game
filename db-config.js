@@ -2,7 +2,7 @@ var path = require('path');
 var knex = require('knex')({
   client: 'sqlite3',
   connection: {
-    filename: path.join(_dirname, './html5-color-game.sqlite')
+    filename: path.join(_dirname, './db/html5-color-game.sqlite')
   },
   useNullAsDefault: true
 });
