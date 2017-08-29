@@ -1,7 +1,4 @@
 var TimerModel = Backbone.Model.extend({
-  initialize: function() {
-    
-  },
 
   startTimer: function(that) {
     var that = this
@@ -14,6 +11,7 @@ var TimerModel = Backbone.Model.extend({
           that.counterChange();
         } else {
           that.endTimer();
+          return;
         }
       }, 1000)
 
@@ -27,6 +25,6 @@ var TimerModel = Backbone.Model.extend({
 
   endTimer: function() {
     this.trigger('endTimer', this);
-    console.log('timer ended')
+    console.log('timer ended');
   }
 });

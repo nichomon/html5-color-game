@@ -6,7 +6,7 @@ var GameStartView = Backbone.View.extend({
   },
 
   template: _.template(
-                        ['<h1 id="awesome-title">',
+                        ['<h1 class="awesome-title">',
                         'How many ridiculous html5 colornames can you enter in 30 seconds???',
                         '</h1>',
                         '<h5>',
@@ -24,6 +24,7 @@ var GameStartView = Backbone.View.extend({
 
   submitNameAndStartGame: function() {
       var input = document.getElementById('name-input-box').value;
+      this.model.enterUser(input);
       this.model.gameStart();
   },
 

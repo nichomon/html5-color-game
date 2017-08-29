@@ -1,5 +1,5 @@
-$(function () {
-  var txtToWrap = $('h1#awesome-title').text().split(' ');
+$(window.allTheColors = function() {
+  var txtToWrap = $('h1.awesome-title').text().split(' ');
   var newTxt = [];
   for (var i = 0; i < txtToWrap.length; i ++) {
     if (txtToWrap[i] !== '' || txtToWrap[i] !== ' ' || txtToWrap[i] !== '  ') {
