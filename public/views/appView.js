@@ -29,8 +29,8 @@ var AppView = Backbone.View.extend({
     }, this);
 
     this.model.get('randomColorsCollection').on('removeColor', function(color) {
-      if (that.model.get('randomColorsCollection').length === 0) {
-        that.render(renderView[2])
+      if (this.model.get('randomColorsCollection').length === 0) {
+        this.render(renderView[2])
       } else {
         this.colorGridView.render();
       }

@@ -14,6 +14,7 @@ $(window.allTheColors = function() {
     for (var j = 0; j < $('h1').children.length; j ++) {
       $('h1').children().each(function() {
         $(this).css('color' , 'rgb(' + randNum(0,255) + ', ' + randNum(0,255) + ', ' + randNum(0,255) + ')' );
+        $('button').css('background-color' , 'rgb(' + randNum(0,255) + ', ' + randNum(0,255) + ', ' + randNum(0,255) + ')' );
       });
     }
 

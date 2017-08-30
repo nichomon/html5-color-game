@@ -4,7 +4,7 @@ var AppModel = Backbone.Model.extend({
     this.set('gameEndModel', new GameEndModel());
     this.set('randomColorsCollection', new RandomColorsCollection());
     this.set('colorQueueCollection', new ColorQueueCollection());
-    this.set('timerModel', new TimerModel({counter: 2}));
+    this.set('timerModel', new TimerModel({counter: 1}));
     this.set('highScoresCollection', new HighScoresCollection());
 
 
@@ -31,7 +31,7 @@ var AppModel = Backbone.Model.extend({
       //invoke send score
       this.get('highScoresCollection').sendScore(window.sessionDetails);
       //reset counter
-      this.get('timerModel').set({counter: 2});
+      this.get('timerModel').set({counter: 1});
     }, this);
 
   }

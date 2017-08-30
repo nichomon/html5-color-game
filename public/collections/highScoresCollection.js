@@ -8,17 +8,18 @@ var HighScoresCollection = Backbone.Collection.extend({
 
   sendScore: function(sessionDetails) {
     var that = this;
-
+    console.log(sessionDetails)
     $.ajax({
       url: 'http://localhost:1337/sendStats',
       type: 'POST',
-      crossDomain: true,
-      data: JSON.stringify([sessionDetails]),
+      data: sessionDetails,
+      ContentType: 'application/json',
       success: function (data) {
+        console.log(data)
         that.reset();
+        console.log('❤️❤️❤️❤️❤️❤️❤️❤️ highScores.models')
         that.genHighScores(data)
         that.trigger('sendScore');
-
       },
       error: function (data) {
         that.reset();

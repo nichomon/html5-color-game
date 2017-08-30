@@ -18,6 +18,12 @@ input {
   margin-bottom: 20px;
 }
 
+#play-again {
+  float: right;
+  padding-right: 100px;
+  color: white;
+}
+
 h5 {
   display: inline-block;
 }
@@ -26,7 +32,12 @@ h1 {
   text-align: center;
 }
 
-td {
+h2 {
+  text-align: center;
+}
+
+td, th {
   padding: 5px 20px 5px 20px;
-  width: 50%;
+  width: 150px;
+  text-align: center;
 }

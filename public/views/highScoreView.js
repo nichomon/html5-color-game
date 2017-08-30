@@ -6,7 +6,6 @@ var HighScoreView = Backbone.View.extend({
 
   initialize: function() {
     this.render();
-    console.log('we runnin?  🚶‍')
   },
 
   render: function() {

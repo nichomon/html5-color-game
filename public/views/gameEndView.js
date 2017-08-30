@@ -9,7 +9,7 @@ var GameEndView = Backbone.View.extend({
     }, this)
   },
 
-  template: _.template('<h1 class="awesome-title">GAME OVER</h1> <button type="button">PLAY AGAIN?</button><br><h1>High Scores</h1>'),
+  template: _.template('<h1 class="awesome-title">GAME OVER</h1> <button id="play-again"type="button">PLAY AGAIN?</button><br><h2>High Scores</h2>'),
 
   render: function() {
     this.$el.children().detach();
