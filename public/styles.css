@@ -36,8 +36,12 @@ h2 {
   text-align: center;
 }
 
+.high-score {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 td, th {
-  padding: 5px 20px 5px 20px;
-  width: 150px;
+  width: 300px;
   text-align: center;
 }

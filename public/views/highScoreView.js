@@ -9,7 +9,6 @@ var HighScoreView = Backbone.View.extend({
   },
 
   render: function() {
-    console.log(this.model.attributes)
     return this.$el.html(this.template(this.model.attributes) )
   }
 

@@ -20,7 +20,7 @@ app.get('/getColors', function(req, res) {
 app.get('/getRandomColors', function(req,res) {
   var randomColors = [];
   var randomNums = [];
-  while (randomNums.length !== 20) {
+  while (randomNums.length !== 50) {
     var num = getRandomIntInclusive(0,147)
     if (randomNums.indexOf(num) === -1) {
       randomNums.push(num);
@@ -80,7 +80,7 @@ new HighScore().orderBy('score','DESC').query(function(queryOptions) {
   .fetchAll()
   .then(function (results) {
     var highScores = [];
-    var header = {rank: '<th>RANK</th>',userName: '<th>PLAYER NAME</th>',score: '<th>SCORE</th>'};
+    var header = {rank: '<strong>RANK</strong>',userName: '<strong>PLAYER NAME</strong>',score: '<strong>SCORE</strong>'};
     highScores.push(header);
     for (var i = 0; i < results.length; i++) {
       var newScore = {};

@@ -25,6 +25,5 @@ var TimerModel = Backbone.Model.extend({
 
   endTimer: function() {
     this.trigger('endTimer', this);
-    console.log('timer ended');
   }
 });

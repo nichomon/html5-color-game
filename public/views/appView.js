@@ -22,8 +22,12 @@ var AppView = Backbone.View.extend({
         this.render(renderView[1]);
     }, this);
 
+    this.model.get('highScoresCollection').on('newGame', function (model) {
+        window.sessionDetails.score = 0;
+        this.render(renderView[1]);
+    }, this);
+
     this.model.get('highScoresCollection').on('sendScore', function (model) {
-        console.log('invoked in appView')
         this.render(renderView[2]);
         window.allTheColors();
     }, this);
@@ -31,6 +35,7 @@ var AppView = Backbone.View.extend({
     this.model.get('randomColorsCollection').on('removeColor', function(color) {
       if (this.model.get('randomColorsCollection').length === 0) {
         this.render(renderView[2])
+        window.allTheColors();
       } else {
         this.colorGridView.render();
       }
@@ -44,11 +49,18 @@ var AppView = Backbone.View.extend({
 
 
   render: function(renderView) {
+
     if (renderView === 'gameStart') {
         return this.$el.html([this.gameStartView.$el]);
     } else if (renderView === 'game') {
+        this.$el.empty();
+        this.colorEntryView.delegateEvents();
+        this.timerView.delegateEvents();
+        this.colorGridView.delegateEvents();
         return this.$el.html([this.colorEntryView.$el, this.timerView.$el, this.colorGridView.$el]);
     } else if (renderView === 'gameEnd') {
+        this.$el.empty();
+        this.gameEndView.delegateEvents();
         return this.$el.html([this.gameEndView.$el]);
     } else {
         return this.$el.html('whoops!');

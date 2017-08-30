@@ -2,10 +2,6 @@ var HighScoresCollection = Backbone.Collection.extend({
 
   model: GameEndModel,
 
-  initialize() {
-    this.genHighScores();
-  },
-
   sendScore: function(sessionDetails) {
     var that = this;
     console.log(sessionDetails)
@@ -15,9 +11,7 @@ var HighScoresCollection = Backbone.Collection.extend({
       data: sessionDetails,
       ContentType: 'application/json',
       success: function (data) {
-        console.log(data)
         that.reset();
-        console.log('❤️❤️❤️❤️❤️❤️❤️❤️ highScores.models')
         that.genHighScores(data)
         that.trigger('sendScore');
       },
@@ -54,6 +48,10 @@ var HighScoresCollection = Backbone.Collection.extend({
       });
     }
 
+  },
+
+  newGame: function() {
+    this.trigger('newGame', this);
   }
 
 })
